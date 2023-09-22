@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardadviser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".ui.advisers.AdvisersFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/cardadviser_iv_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_menu_advisers"
+            android:backgroundTint="@color/teal_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <TextView
+            android:id="@+id/cardadviser_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAllCaps="true"
+            android:textColor="@color/grey"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cardadviser_iv_photo"
+            app:layout_constraintTop_toTopOf="@+id/cardadviser_iv_photo"
+            tools:text="EDUARDO PEREA MURCIA" />
+
+        <LinearLayout
+            android:id="@+id/cardadviser_layout_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/cardadviser_iv_photo"
+            app:layout_constraintTop_toBottomOf="@id/cardadviser_tv_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adviser_email"
+                android:textColor="@color/grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adviser_user"
+                android:textColor="@color/grey"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardadviser_layout_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/cardadviser_layout_names"
+            app:layout_constraintTop_toBottomOf="@+id/cardadviser_tv_name">
+
+            <TextView
+                android:id="@+id/cardadviser_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                tools:text="eperea@gmail.com" />
+
+            <TextView
+                android:id="@+id/cardadviser_tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                tools:text="eperea" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

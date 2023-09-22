@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.kobrapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.kobrapp.ui.credits.CreditsFragment"
+        android:label="@string/menu_credits"
+        tools:layout="@layout/fragment_credits" />
+
+    <fragment
+        android:id="@+id/nav_clients"
+        android:name="com.example.kobrapp.ui.clients.ClientsFragment"
+        android:label="@string/menu_clients"
+        tools:layout="@layout/fragment_clients" />
+
+    <fragment
+        android:id="@+id/nav_payments"
+        android:name="com.example.kobrapp.ui.payments.PaymentsFragment"
+        android:label="@string/menu_payments"
+        tools:layout="@layout/fragment_payments" />
+
+    <fragment
+        android:id="@+id/nav_advisers"
+        android:name="com.example.kobrapp.ui.advisers.AdvisersFragment"
+        android:label="@string/menu_advisers"
+        tools:layout="@layout/fragment_advisers" />
+
+    <fragment
+        android:id="@+id/nav_boxes"
+        android:name="com.example.kobrapp.ui.boxes.BoxesFragment"
+        android:label="@string/menu_boxes"
+        tools:layout="@layout/fragment_boxes" />
+
+    <fragment
+        android:id="@+id/nav_income"
+        android:name="com.example.kobrapp.ui.income.IncomeFragment"
+        android:label="@string/menu_income"
+        tools:layout="@layout/fragment_income" />
+
+    <fragment
+        android:id="@+id/nav_expenses"
+        android:name="com.example.kobrapp.ui.expenses.ExpensesFragment"
+        android:label="@string/menu_expenses"
+        tools:layout="@layout/fragment_expenses" />
+
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.example.kobrapp.ui.reports.ReportsFragment"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/fragment_reports" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.kobrapp.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

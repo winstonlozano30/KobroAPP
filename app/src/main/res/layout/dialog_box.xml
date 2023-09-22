@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogbox"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/dialogbox_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/box_title"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialogbox_tv_typename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/box_typename"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogbox_tv_title" />
+
+    <RadioGroup
+        android:id="@+id/dialogbox_rg_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogbox_tv_typename">
+
+        <RadioButton
+            android:id="@+id/dialogbox_rb_opening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue_700"
+            android:checked="true"
+            android:text="@string/box_opening" />
+
+        <RadioButton
+            android:id="@+id/dialogbox_rb_closing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:buttonTint="@color/black"
+            android:text="@string/box_closing" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dialogbox_tv_datename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/box_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogbox_rg_types" />
+
+    <DatePicker
+        android:id="@+id/dialogbox_dp_registrationdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarTextColor="@color/blue_700"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:minDate="01/01/2023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogbox_tv_datename" />
+
+    <Button
+        android:id="@+id/dialogbox_btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/box_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogbox_dp_registrationdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

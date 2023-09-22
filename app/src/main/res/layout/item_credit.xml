@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardcredit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".ui.credits.CreditsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/cardcredit_iv_photo"
+            android:layout_width="70dp"
+            android:layout_height="110dp"
+            android:background="@color/blue_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cardcredit_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/grey"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cardcredit_iv_photo"
+            app:layout_constraintTop_toTopOf="@+id/cardcredit_iv_photo"
+            tools:text="NOMBRE DEL CLIENTE" />
+
+        <LinearLayout
+            android:id="@+id/cardcredit_layout_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/cardcredit_iv_photo"
+            app:layout_constraintTop_toBottomOf="@+id/cardcredit_tv_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/client_credit"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/client_address"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/client_phone"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/client_date"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardcredit_layout_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/cardcredit_layout_names"
+            app:layout_constraintTop_toBottomOf="@+id/cardcredit_tv_name">
+
+            <TextView
+                android:id="@+id/cardcredit_tv_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                tools:text=" #02100" />
+
+            <TextView
+                android:id="@+id/cardcredit_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                tools:text=" Cra 6 #60B - 08" />
+
+            <TextView
+                android:id="@+id/cardcredit_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                tools:text=" 3006007890" />
+
+            <TextView
+                android:id="@+id/cardcredit_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                tools:text=" 06/08/2023" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardcredit_layout_result"
+            app:layout_constraintTop_toBottomOf="@+id/cardcredit_tv_name">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/client_fee"
+                android:textAlignment="center"
+                android:textColor="@color/blue_700"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cardcredit_tv_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/blue_700"
+                android:textSize="15dp"
+                tools:text=" $10.000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardcredit_layout_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/cardcredit_layout_result"
+            app:layout_constraintStart_toEndOf="@+id/cardcredit_layout_result">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/client_total"
+                android:textAllCaps="true"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/cardcredit_layout_total"
+            app:layout_constraintStart_toEndOf="@+id/cardcredit_layout_total">
+
+            <TextView
+                android:id="@+id/cardcredit_tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:text=" $100.000" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

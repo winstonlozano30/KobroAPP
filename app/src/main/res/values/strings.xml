@@ -1,0 +1,59 @@
+<resources>
+    <!--Apps-->
+    <string name="app_name">KOBRA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Kobra App</string>
+    <string name="nav_header_subtitle">kobra.app@android.com</string>
+    <string name="nav_header_desc">Encabezado de navegación</string>
+    <string name="action_settings">Ajustes</string>
+
+    <!--Menu-->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_credits">Creditos</string>
+    <string name="menu_clients">Clientes</string>
+    <string name="menu_payments">Pagos</string>
+    <string name="menu_advisers">Asesores</string>
+    <string name="menu_boxes">Cajas</string>
+    <string name="menu_income">Ingresos</string>
+    <string name="menu_expenses">Egresos</string>
+    <string name="menu_reports">Informes</string>
+    <string name="menu_login">Iniciar Sesión</string>
+    <string name="menu_logout">Cerrar Sesión</string>
+    <string name="menu_administrators">Administración</string>
+
+    <!-- Client Data (Datos de Cliente)-->
+    <string name="client_name">Nombre:</string>
+    <string name="client_credit">Credito:</string>
+    <string name="client_address">Dirección:</string>
+    <string name="client_phone">Telefono:</string>
+    <string name="client_date">Fecha:</string>
+    <string name="client_fee">Cuota</string>
+    <string name="client_total">Deuda:</string>
+
+    <!--Adviser Data (Datos de Asesor)-->
+    <string name="adviser_email">Correo:</string>
+    <string name="adviser_address">Dirección:</string>
+    <string name="adviser_phone">Telefono:</string>
+    <string name="adviser_date">Fecha:</string>
+    <string name="adviser_user">Usuario:</string>
+    <string name="adviser_password">Contraseña:</string>
+
+    <!-- Box Data (Datos de Caja)-->
+    <string name="box_open">Abrir</string>
+    <string name="box_close">Cerrar</string>
+    <string name="box_title">Registro de Movimiento</string>
+    <string name="box_typename">Tipo de registro: </string>
+    <string name="box_opening">Apertura</string>
+    <string name="box_closing">Cierre</string>
+    <string name="box_date">Tipo de registro: </string>
+    <string name="box_register">Registrar</string>
+
+    <!-- Payment Data (Datos de Pago) -->
+    <string name="payment_authorized">Autorizado por</string>
+
+    <!-- Reports Data (Datos de Reporte) -->
+    <string name="report_generate">Generar</string>
+
+
+</resources>
